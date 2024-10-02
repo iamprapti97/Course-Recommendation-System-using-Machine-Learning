@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COURSE RECOMMENDER SYSTEM</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    .text-white{
+    color:white
+    }
+</style>
+<body style="background-color:black">
+
+<table width="100%" height ="130px" border="1">
+            <nav>
+                <tr bgcolor="#00ffff">
+                    <td width="60%" align="center"><a style="font-size:40px"><b>COURSE RECOMMENDATION SYSTEM</b></a></td>
+                    <td width="13%" align="center"><b><a href="/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxWXHbvKvG9Gj15uItcN5uC7F78ZyJgTybrw&usqp=CAU" width="120" height="50" ></a></b></td>
+                    <td width="13%" align="center"><b><a href="/recommend"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qpjsZj8lPTdIiMlvEMiD4_63kNA3KVSOqQ&usqp=CAU" width="120" height="50" ></a></b></td>
+                    <td width="13%" align="center"><b><a href="/recommended"><img src="data:image/png;base64,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" width="120" height="50" ></a></b></td>
+                    <td width="45%" align="center"></td>
+                    </div>
+                </tr>
+      </nav>
+</table>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-white" style="font-size:35px">COURSES RECOMMEND</h1>
+                <form action="/recommend_course" method="post">
+                    <input name="user_in" type="text" class="frm-control" size="150"><br><br>
+                    <input type="submit" class="btn-lg btn-warning"><br><br>
+                </form>
+            </div>
+
+            {% if data_list %}
+            {% for i in data_list%}
+            <div class="col-md-4" style="margin-top:80px" >
+                <div class="card">
+                    <div class="card-body" >
+
+                        <a href="{{i[6]}}" target="_blank">
+                            <img class="card-img-top" src="{{i[2]}}" width="400" height="200">
+                        </a>
+                        <a style="font-weight:bold"><a style="text-transform:uppercase">
+                            <p class="text-black" style="font-size:20px">{{i[5]}}</p>
+                        </a></a>
+                        <h5 class="text-black">{{i[0]}}</h5>
+                        <h6 class="text-black">Platform: {{i[4]}} </h6>
+                        <h6 class="text-black">Rating: {{i[3]}}</h6>
+                        <div id="details" class="collapse">
+                            <h6 class="text-black">Description: {{i[1]}}</h6>
+                    </div>
+                            <button class="btn btn-primary" data-toggle="collapse" data-target="#details">Show More</button>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            {% endif %}
+
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.collapse').on('shown.bs.collapse', function(){
+                $(this).parent().find(".btn").html('Show Less');
+            }).on('hidden.bs.collapse', function(){
+                $(this).parent().find(".btn").html('Show More');
+            });
+        });
+    </script>
+</body>
+</html>
